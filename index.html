@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form di Registrazione e Contatore</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .container {
+            margin-top: 50px;
+        }
+        .counter {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Form di Registrazione -->
+        <div class="mb-4">
+            <h5>Form di Registrazione</h5>
+            <div id="savedName" class="alert alert-info" role="alert" style="display: none;"></div>
+            <div class="input-group mb-3">
+                <input type="text" id="nameInput" class="form-control" placeholder="Inserisci il tuo nome">
+                <button class="btn btn-primary" onclick="saveName()">Salva</button>
+                <button class="btn btn-danger" onclick="removeName()">Rimuovi</button>
+            </div>
+        </div>
+
+        <!-- Contatore -->
+        <div class="counter">
+            <h5>Contatore di Tempo</h5>
+            <span id="timeCounter">0</span> secondi
+        </div>
+    </div>
+
+    <!-- Collegamento al file JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
